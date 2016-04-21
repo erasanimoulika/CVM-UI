@@ -1,0 +1,17 @@
+<div>
+    <div class="alert alert-danger" role="alert" ng-if="appMessageSvc.errorMsgs.length > 0">
+        <button type="button" class="close" ng-click="appMessageSvc.clearError()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <p ng-repeat="e in appMessageSvc.errorMsgs track by $index">{{e}}</p>
+
+    </div>
+    <div class="alert alert-success" role="alert" ng-if="appMessageSvc.successMsgs.length > 0">
+        <button type="button" class="close" ng-click="appMessageSvc.clearSuccess()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <p ng-repeat="e in appMessageSvc.successMsgs track by $index">
+            {{e}}
+        </p>
+    </div>
+</div>

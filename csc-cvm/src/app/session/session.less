@@ -1,0 +1,282 @@
+#session-details-page {
+    background-color: #eeeeee;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    overflow-y: hidden;
+    height: 100%;
+    .heading,
+    .session-heading {
+        color: #ef2525;
+        font-family: workSansLight;
+        font-size: 1.4em;
+        padding-bottom: 5px;
+    }
+    .reach-presenter {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
+        padding-top: 5px;
+        .reach-presenter-text {
+            align-self: center;
+            display: inline-block;
+            font-size: 0.8em;
+            margin-bottom: 12px;
+            color: #8a8a8a;
+        }
+        .phone,
+        .email {
+            color: white;
+            width: 20px;
+            height: 20px;
+            background: #888;
+            border-radius: 15px;
+            text-align: center;
+            padding-top: 4px;
+            font-size: 0.8em;
+        }
+        .tele-link {
+            margin-left: 5px;
+            margin-right: 10px;
+        }
+    }
+    .session-image img {
+        width: 100%;
+    }
+    .presenter-pic img,
+    .participant-pic img {
+        width: 60px;
+    }
+    .list-group-item:first-child {
+        margin-top: -10px;
+    }
+    .list-group-item {
+        display: inline-block;
+        border: none;
+        border-bottom: 1px solid #dddddd;
+        padding: 0px;
+        border-radius: 0px;
+        width: 100%;
+        .participant-bios-div {
+            padding-left: 25px;
+            padding-top: 20px;
+        }
+        .participant-pic {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    }
+    .session-description-div,
+    .session-presenter,
+    .session-participants {
+        margin: 10px;
+        background-color: #fff;
+        display: inline-block;
+        padding: 10px;
+        box-shadow: 2px 2px 2px #c1c1c1;
+    }
+    .session-presenter,
+    .session-participants {
+        margin-top: 0;
+    }
+    .session-participants {
+        display: block;
+    }
+    .header {
+        background-color: #fff;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        padding: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        text-align: center;
+        box-shadow: 2px 2px 5px #676767;
+        z-index: 1;
+        .back-icon {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+        }
+        .time-session-name-div {
+            color: #850057;
+            font-size: 1.4em;
+            display: inline-block;
+            width: 100%;
+            padding-top: 5px;
+            font-family: workSansRegular;
+            .session-name {
+                font-family: workSansBold;
+                letter-spacing: 2px;
+                margin-left: 10px;
+            }
+        }
+        .venue-feedback-div {
+            font-size: 0.8em;
+            color: #777;
+            font-family: robotoMedium;
+            display: inline-block;
+            width: 100%;
+            padding-right: 15px;
+            .glyphicon-map-marker {
+                margin-right: 3px;
+                font-size: 0.9em;
+            }
+            .feedback-button {
+                position: relative;
+                margin-left: 10px;
+                .glyphicon-triangle-bottom {
+                    font-size: 0.7em;
+                    -webkit-transform: rotate(0deg);
+                    -moz-transform: rotate(0deg);
+                    -ms-transform: rotate(0deg);
+                    -o-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                    -webkit-transition: all 0.5s ease;
+                    -moz-transition: all 0.5s ease;
+                    transition: all 0.5s ease;
+                }
+                .rotate-arrow {
+                    -webkit-transform: rotate(180deg);
+                    -moz-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                    -o-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                    -webkit-transition: all 0.5s ease;
+                    -moz-transition: all 0.5s ease;
+                    transition: all 0.5s ease;
+                    top: -1px;
+                }
+                .feedback-triangle {
+                    position: absolute;
+                    right: 50%;
+                    display: none;
+                    z-index: 1;
+                    width: 12px;
+                    bottom: -12px;
+                }
+            }
+            .bold-text {
+                font-weight: bold;
+                color: #3D3D3D;
+            }
+        }
+        .session-feedback-form {
+            display: none;
+        }
+    }
+    .no-padding {
+        padding-bottom: 0px;
+    }
+    .session-contents {
+        margin-top: 74px;
+    }
+    .presenter-pic,
+    .participant-pic {
+        padding: 0px;
+    }
+    .session-description {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-family: robotoRegular;
+        font-size: 0.8em;
+    }
+    .share {
+        padding-top: 5px;
+        border-top: 2px solid #d0d0d0;
+        float: right;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
+        width: 100%;
+        color: #767676;
+        font-family: robotoRegular;
+        font-size: 0.8em;
+        padding-right: 5px;
+        div {
+            align-self: center;
+        }
+        .share-icon-img {
+            .sprite(@share-icon-20px);
+            margin-right: 4px;
+        }
+    }
+    .presenter-bios-div {
+        padding-left: 25px;
+        padding-right: 0;
+    }
+    .presenter-name,
+    .participant-name {
+        font-family: robotoBold;
+        color: #676767;
+    }
+    .presenter-designation,
+    .participant-designation {
+        font-family: robotoBold;
+        color: #8a8a8a;
+        font-size: 0.8em;
+        margin-bottom: 12px;
+    }
+    .presenter-bios {
+        font-family: robotoRegular;
+        font-size: 0.8em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: 1px solid #d0d0d0;
+        border-bottom: 1px solid #d0d0d0;
+    }
+    #feedback-section {
+        margin-top: 9px;
+    }
+}
+
+@media (min-width: 411px) {
+    #session-details-page {
+        .presenter-pic,
+        .participant-pic {
+            width: 12.5%;
+        }
+        #feedback-section.session-feedback-form {
+            font-size: 0.85em;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    #session-details-page {
+        .presenter-pic,
+        .participant-pic {
+            width: 9.5%;
+        }
+        #feedback-section .feedback-form .checkbox-div .checkbox-input label {
+            margin-left: 10px;
+        }
+    }
+}
+
+@media (min-width: 667px) {
+    #session-details-page {
+        .presenter-pic,
+        .participant-pic {
+            width: 7.5%;
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    #session-details-page {
+        .presenter-pic,
+        .participant-pic {
+            width: 5.5%;
+        }
+    }
+}

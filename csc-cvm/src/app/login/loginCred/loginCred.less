@@ -1,0 +1,136 @@
+#login-cred {
+    height: 200px;
+    text-align: center;
+    font-family: workSansExtraLight;
+    .login-form {
+        margin: 0 50px;
+    }
+    .login-button {
+        width: 200px;
+        height: 35px;
+        border: solid 1px #D53535;
+        color: #fff;
+        font-size: 1.4em;
+        letter-spacing: 2px;
+        background: rgba(213, 53, 53, 1);
+        background: -moz-linear-gradient(top, rgba(213, 53, 53, 1) 0%, rgba(185, 32, 32, 1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(213, 53, 53, 1)), color-stop(100%, rgba(185, 32, 32, 1)));
+        background: -webkit-linear-gradient(top, rgba(213, 53, 53, 1) 0%, rgba(185, 32, 32, 1) 100%);
+        background: -o-linear-gradient(top, rgba(213, 53, 53, 1) 0%, rgba(185, 32, 32, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(213, 53, 53, 1) 0%, rgba(185, 32, 32, 1) 100%);
+        background: linear-gradient(to bottom, rgba(213, 53, 53, 1) 0%, rgba(185, 32, 32, 1) 100%);
+        /*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d53535', endColorstr='#b92020', GradientType=0);*/
+    }
+    .login-close-div {
+        margin-bottom: 20px;
+        .login-close-but {
+            float: right;
+            width: 15px;
+            cursor: pointer;
+        }
+    }
+    .username,
+    .password {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        text-align: left;
+        font-size: 1.1em;
+        position: relative;
+        height: 52px;
+        display: inline-block;
+        width: 100%;
+        div {
+            margin-right: 15px;
+            display: inline-block;
+            opacity: 1;
+        }
+        label {
+            position: absolute;
+            top: 22px;
+            display: block;
+            opacity: 1;
+            transition: all 0.1s ease-in-out;
+            padding-left: 36px;
+            color: #fff;
+            font-size: 1em;
+        }
+        .label-visible {
+            top: 6px;
+            font-size: 0.8em;
+        }
+        input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: rgba(255, 255, 255, 1);
+            min-height: 50px;
+            padding-top: 21px;
+            font-weight: normal;
+            width: 80%;
+        }
+        input::-webkit-input-placeholder {
+            color: #fff;
+        }
+        input:-moz-placeholder {
+            color: #fff;
+        }
+        input::-moz-placeholder {
+            color: #fff;
+        }
+        input:-ms-input-placeholder {
+            color: #fff;
+        }
+    }
+    .username div {
+        .sprite(@user-17px);
+    }
+    .password div {
+        .sprite(@lock-17px);
+    }
+}
+
+.modal-dialog-loginCred .modal-content {
+    background-color: rgba(245, 245, 245, 0.7);
+    height: 100%;
+    border-radius: 0;
+}
+
+.modal-dialog-loginCred .modal-dialog {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+@media (min-width: 480px) {
+    #login-cred {
+        .login-form {
+            margin: 0 100px;
+        }
+    }
+}
+
+@media (min-width: 568px) {
+    #login-cred {
+        .login-form {
+            margin: 0 150px;
+        }
+    }
+}
+
+@media (min-width: 667px) {
+    #login-cred {
+        .login-form {
+            margin: 0 200px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    #login-cred {
+        .login-form {
+            margin: 0 300px;
+        }
+    }
+}

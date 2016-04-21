@@ -1,0 +1,429 @@
+.icon-img-center() {
+    width: 75px;
+    height: 75px;
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -ms-flexbox !important;
+    display: -webkit-flex !important;
+    display: flex !important;
+    justify-content: center;
+}
+
+.icon-img-center-inner(@img-name) {
+    .sprite(@img-name);
+    -webkit-align-self: center;
+    align-self: center;
+    margin: auto;
+}
+
+#CVM-Home {
+    .session-overview .agenda,
+    #menu .row div,
+    .session-overview .row div,
+    #menu .row div a div {
+        display: block;
+        text-align: center;
+    }
+    .agenda {
+        padding-bottom: 8px;
+        color: #fff;
+        top: 9px;
+        padding-top: 0;
+        font-family: workSansBold;
+        font-size: 0.75em;
+        a,
+        a:hover {
+            color: #fff;
+            letter-spacing: 2px;
+            font-family: workSansBold;
+        }
+    }
+    div#profile-details {
+        padding-top: 20px;
+        background: url("hero-bg.jpg") no-repeat;
+        .profile-pic,
+        .profile-name,
+        .profile-desc,
+        .profile-location {
+            color: #fff;
+            display: block;
+            text-align: center;
+            padding-bottom: 10px;
+            font-family: workSansBold;
+            text-shadow: 1px 1px #444444;
+        }
+        .profile-location {
+            font-family: robotoBold;
+            .profile-location-text {
+                text-decoration: inherit;
+                border-bottom: dotted 1px #fff;
+                padding-bottom: 2px;
+            }
+        }
+        .profile-name {
+            font-size: 1.3125em;
+        }
+        .profile-desc {
+            font-size: 0.875em;
+        }
+        .profile-location {
+            padding-bottom: 15px;
+            font-size: 0.75em;
+        }
+    }
+    .session-overview {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .on-time {
+        font-family: robotoCondensedBold;
+        color: #9ed352;
+        font-size: 0.75em;
+    }
+    .second-span {
+        font-family: robotoBlack;
+        color: #fff;
+        font-size: 0.8125em;
+    }
+    .third-span {
+        font-family: workSansBold;
+        color: #efefef;
+        font-size: 0.625em;
+    }
+    .next {
+        font-family: robotoCondensedBold;
+        color: #d3d3d3;
+        font-size: 0.75em;
+    }
+    .session-overview .row .currentSession div {
+        display: block;
+        text-align: right;
+    }
+    .currentSession {
+        padding-left: 0 !important;
+        padding-right: 0;
+    }
+    .session-overview .row {
+        padding-top: 30px;
+        padding-bottom: 15px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .session-overview .row .next-session div {
+        display: block;
+        text-align: left;
+    }
+    .next-session {
+        padding-left: 0;
+        padding-right: 0 !important;
+    }
+    .profile-pic img {
+        width: 75px;
+    }
+    #profile-details .notifications {
+        top: 7px;
+        right: 35px;
+        position: absolute;
+        a {
+            position: absolute;
+            .notifications-icon {
+                .sprite(@notifications-30px);
+                margin-right: 5px;
+            }
+        }
+    }
+    #menu .row {
+        padding-top: 15px;
+        div {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 0.85em;
+            letter-spacing: 2px;
+        }
+    }
+    span.menuName {
+        padding-top: 15px;
+    }
+    .menu-circle-icon {
+        width: 75px;
+        height: 75px;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        margin: 0 auto;
+    }
+    .factsheets {
+        background: #96859F;
+        .icon-img-center();
+        .factsheets-img {
+            .icon-img-center-inner(@factsheet-icon-45px);
+        }
+    }
+    .factsheets-text {
+        color: #54475A;
+        padding-top: 13px;
+        font-family: workSansBold;
+    }
+    .spoc {
+        background: #850057;
+        .icon-img-center();
+        .spoc-img {
+            .icon-img-center-inner(@contact-spoc-45px);
+        }
+    }
+    .spoc-text {
+        color: #4E1C3D;
+        padding-top: 13px;
+        font-family: workSansBold;
+    }
+    .feedback {
+        background: #C4BB5B;
+        .icon-img-center();
+        .feedback-img {
+            .icon-img-center-inner(@feedback-icon-45px);
+        }
+    }
+    .feedback-text {
+        color: #545025;
+        padding-top: 13px;
+        font-family: workSansBold;
+    }
+    .exec-bio {
+        background: #003F60;
+        .icon-img-center();
+        .exec-bio-img {
+            .icon-img-center-inner(@exec-bios-icon-45px);
+        }
+    }
+    .exec-bio-text {
+        color: #1F3F50;
+        padding-top: 13px;
+        font-family: workSansBold;
+    }
+    .past-visits {
+        background: #588BA3;
+        .icon-img-center();
+        .past-visits-img {
+            .icon-img-center-inner(@past-visits-icon-45px);
+        }
+    }
+    .past-visits-text {
+        color: #204353;
+        padding-top: 13px;
+        font-family: workSansBold;
+    }
+    .account-info {
+        background: #A2915D;
+        .icon-img-center();
+        .account-info-img {
+            .icon-img-center-inner(@account-info-icon-45px);
+        }
+    }
+    .account-info-text {
+        color: #4D452e;
+        padding-top: 13px;
+        font-family: workSansBold;
+    }
+    .clock-container {
+        height: 70px;
+    }
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .day,
+    .loc {
+        color: #fff;
+        font-size: 0.68em;
+        display: block;
+        font-family: robotoCondensedBold;
+    }
+    .day {
+        color: #EAEDF2;
+    }
+    .clocks-display {
+        padding-top: 25px;
+        padding-bottom: 45px;
+    }
+    .session-overview.clocks-display .row {
+        padding-top: 0;
+    }
+    /*clock with progress bar*/
+    .face {
+        stroke-width: 3px;
+        stroke: #88BA41;
+        fill: #ffffff;
+    }
+    .hour,
+    .min {
+        stroke-width: 1px;
+        fill: #628036;
+    }
+    .clocks-circle-color {
+        stroke: #95A1BB;
+    }
+    .clocks-rect-color {
+        fill: #95A1BB;
+    }
+    .arc {
+        stroke: #88BA41;
+        fill: none;
+        stroke-width: 5px;
+    }
+    .clock {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+    #CVM-Home {
+        .session-overview .row {
+            .currentSession,
+            .next-session {
+                font-size: 1.1em;
+            }
+        }
+        .session-overview .row {
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+        .session-overview.clocks-display .row {
+            padding-top: 0;
+        }
+        div#profile-details {
+            .profile-name {
+                font-size: 1.125em;
+            }
+            .profile-desc {
+                font-size: 0.875em;
+            }
+            .profile-location {
+                font-size: 0.75em;
+            }
+        }
+        .menu-circle-icon {
+            width: 65px;
+            height: 65px;
+        }
+        .factsheets-img {
+            .icon-img-center-inner(@factsheet-icon-36px);
+        }
+        .spoc-img {
+            .icon-img-center-inner(@contact-spoc-36px);
+        }
+        .account-info-img {
+            .icon-img-center-inner(@account-info-icon-36px);
+        }
+        .feedback-img {
+            .icon-img-center-inner(@feedback-icon-36px);
+        }
+        .exec-bio-img {
+            .icon-img-center-inner(@exec-bios-icon-36px);
+        }
+        .past-visits-img {
+            .icon-img-center-inner(@past-visits-icon-36px);
+        }
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 424px) {
+    #CVM-Home {
+        .session-overview .row {
+            .current-session,
+            .next-session {
+                font-size: 0.75em;
+            }
+        }
+        .menu-circle-icon {
+            width: 65px;
+            height: 65px;
+        }
+        .factsheets-img {
+            .icon-img-center-inner(@factsheet-icon-36px);
+        }
+        .spoc-img {
+            .icon-img-center-inner(@contact-spoc-36px);
+        }
+        .account-info-img {
+            .icon-img-center-inner(@account-info-icon-36px);
+        }
+        .feedback-img {
+            .icon-img-center-inner(@feedback-icon-36px);
+        }
+        .exec-bio-img {
+            .icon-img-center-inner(@exec-bios-icon-36px);
+        }
+        .past-visits-img {
+            .icon-img-center-inner(@past-visits-icon-36px);
+        }
+    }
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 601px) {
+    #CVM-Home {
+        font-size: 26px;
+        .clocks-display {
+            padding-top: 40px;
+            padding-bottom: 90px;
+        }
+        .profile-pic img {
+            width: 100px;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    #CVM-Home {
+        font-size: 30px;
+        .session-overview .row {
+            .next-session div {
+                margin-left: 30px;
+            }
+            .current-session div {
+                margin-right: 88px;
+            }
+        }
+        .clocks-display {
+            padding-top: 50px;
+            padding-bottom: 120px;
+        }
+        .profile-pic img {
+            width: 120px;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 768px) {
+    #CVM-Home {
+        .clock {
+            width: 80px;
+            height: 80px;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1440px) {
+    #CVM-Home {
+        font-size: 20px;
+        .session-overview .row {
+            .next-session div {
+                margin-left: 88px;
+            }
+            .current-session div {
+                margin-right: 200px;
+            }
+        }
+        .clocks-display {
+            padding-top: 30px;
+            padding-bottom: 70px;
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1200px) {
+    #CVM-Home {
+        div#profile-details {
+            background-size: 100%;
+        }
+    }
+}

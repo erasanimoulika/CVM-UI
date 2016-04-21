@@ -1,0 +1,16 @@
+<div id="dashboard-page">
+    <div class="header">Dashboard</div>
+    <div class="scrollable-content">
+        <div ng-repeat="tile in dashBoard_tiles" id= "tile{{$index}}" class="tiles" ng-class="{'tile-small': tile.tile_content.length == 0, 'tile-big': tile.tile_content.length >= 1 }">
+            <div>
+                <div class="tile-image" ng-class="{'display-block': tile.tile_img.length != '', 'display-none': tile.tile_img.length == '' }">
+                	<img ng-src="{{tile.tile_img}}">
+                </div>
+                <div class="tile-contents">
+                    {{tile.tile_content}}
+                </div>
+                <div class="tile-name">{{tile.tile_name}}</div>
+            </div>
+        </div>
+    </div>
+</div>

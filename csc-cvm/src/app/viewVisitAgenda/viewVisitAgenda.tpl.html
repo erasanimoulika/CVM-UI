@@ -1,0 +1,43 @@
+<div id="view-visit-agenda" class="container-fluid div-padding" click-capture>
+    <div class="header"><span class="back-icon" ng-click="goBack()"></span>Visit Details</div>
+    <div class="visit-agenda-content col-xs-12 col-sm-12 col-md-12 scrollable-content">
+        <div class="visit-card">
+            <div class="col-xs-12 col-sm-12 col-md-12 div-padding visit-agenda-title" ng-click="goToAgenda()">
+                <h1 class="col-xs-11 col-sm-11 col-md-11 div-padding">MOTOROLA VISIT</h1>
+                <span class="pull-right img-vertical-align glyphicon glyphicon-menu-right"></span>
+            </div>
+            <p class="visit-title"> By
+                <span>Motorola Mobiles</span> on
+                <span>Mobility</span>
+            </p>
+            <p class="badge-details"><img src="assets/badge-gold.png"> GOLD CATEGORY CLIENT</p>
+            <p class="visit-details"><img src="assets/calendar-myvisit.png" class="cal"> 26 Feb 2016 - 28 Feb 2016</p>
+            <p class="visit-details"><img src="assets/venue-bldg.png" class="location"> Hydrabad <span class="separator">|</span> Chennai <span class="separator">|</span> Noida</p>
+            <div class="imp-visitors">
+                <p>Important Visitors</p>
+                <div ng-repeat="i in [1,2]" class="visitor-details-div">
+                    <div class="visitor-details">
+                        <img src="assets/profile-pic.png" class="profile-img">
+                        <div>
+                            <h2 class="visitor-name">JOHN WAYNE</h2>
+                            <p class="visitor-desig">Senior Vice President, Motorola</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="visit-type">
+                <p class="section-heading">Visit Type</p>
+                <div>
+                    <h2>EXPLORATION VISIT</h2>
+                    <p class="session-field">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 floater">
+        <!-- <span>SKIP TO AGENDA</span><span class="glyphicon glyphicon-menu-right"></span> -->
+        <button ng-click="goToAgenda()">SKIP TO AGENDA <span class="glyphicon glyphicon-menu-right"></span></button>
+    </div>
+</div>

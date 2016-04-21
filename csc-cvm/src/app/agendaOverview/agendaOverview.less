@@ -1,0 +1,306 @@
+.agenda-parent-div {
+    color: #000;
+    height: 100%;
+    overflow-y: hidden;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    .agenda-header-div {
+        flex: 0 1 auto;
+        -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+        padding: 0px 15px;
+        h1 {
+            font-size: 2em;
+            margin-left: 40px;
+            margin-top: 15px;
+            font-family: robotoRegular;
+            font-weight: 100;
+        }
+    }
+    .agenda-nav-container {
+        display: inline;
+    }
+    #agenda-scrollable-block {
+        overflow-y: auto;
+        flex: 1 1 auto;
+        -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+    }
+    .day-agenda-header {
+        background: linear-gradient(@currentActiveAgendaSessionNameColor, #9e3d7d);
+        background: -webkit-linear-gradient(@currentActiveAgendaSessionNameColor, #9e3d7d);
+        color: #fff;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding: 10px;
+        font-family: robotoBold;
+        font-size: 1.48em;
+        text-align: center;
+        .day-agenda-header-cal-img {
+            height: 20px;
+            margin-top: -5px;
+            width: 20px;
+        }
+        .day-agenda-header-loc-img {
+            height: 20px;
+            margin-left: 30px;
+            margin-right: 5px;
+            margin-top: -5px;
+            width: 15px;
+        }
+    }
+    .agenda-attendees {
+        position: relative;
+        display: inline-block;
+    }
+    .profile-img {
+        width: 40px;
+        height: 40px;
+        margin-left: 10px;
+    }
+    .agenda-circle {
+        background: #bbbbbb none repeat scroll 0 0;
+        border-radius: 20px;
+        display: inline-block;
+        height: 38px;
+        margin-left: 15px;
+        padding-top: 6px;
+        width: 38px;
+        span {
+            color: #fff;
+            padding-left: 12px;
+            position: unset;
+        }
+    }
+    .feedback-link {
+        text-decoration: underline;
+        margin-left: 50px;
+        color: #969696;
+        -moz-text-decoration-color: #d6d6d6;
+        /* Code for Firefox */
+        text-decoration-color: #d6d6d6;
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        .glyphicon-triangle-bottom {
+            font-size: 0.7em;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+        .rotate-arrow {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            top: -1px;
+        }
+        .feedback-triangle {
+            bottom: -22px;
+            height: 10.5px;
+            position: absolute;
+            right: 50%;
+            width: 21px;
+            z-index: 2;
+            display: none;
+        }
+    }
+    .agenda-session-overview {
+        padding-left: 25px;
+        font-family: robotoMedium;
+        color: #777777;
+    }
+    .agenda-session-block {
+        border-left: 4px solid #fff;
+    }
+    .agenda-block-sub-div {
+        border-left: 1px solid #cccccc;
+        margin: 0 25px;
+        padding: 20px 0;
+    }
+    .session-status-img {
+        width: 25px;
+        height: 25px;
+        margin-left: -13px;
+        margin-top: -15px;
+    }
+    .agenda-session-time {
+        font-family: antonioBold;
+        font-size: 2em;
+        color: @futureAgendaTimeColor;
+        padding-left: 10px;
+    }
+    .agenda-session-title {
+        vertical-align: middle;
+        position: relative;
+    }
+    .agenda-session-name {
+        font-family: workSansLight;
+        font-size: 2.5em;
+        color: @futureAgendaSessionNameColor;
+    }
+    .agenda-session-loc {
+        font-size: 1.14em;
+    }
+    .agenda-list {
+        padding-left: 0px;
+        li {
+            display: inline;
+            margin-right: 30px;
+        }
+    }
+    .agenda-list a {
+        letter-spacing: 4px;
+        font-size: 1em;
+        font-family: workSansBold;
+        color: @futureAgendaSessionNameColor;
+    }
+    .agenda-list a.active {
+        font-size: 1.87em;
+    }
+    .agenda-time-img,
+    .agenda-loc-img {
+        height: 15px;
+        width: 14px;
+        margin-top: -3px;
+        margin-right: 3px;
+    }
+    .agenda-loc-img {
+        margin-left: 40px;
+    }
+    .session-arrow {
+        height: 26px;
+        width: 13px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0px;
+    }
+    .agenda-session-feedback-div {
+        background-color: #f8f8f8;
+        margin-left: -4px;
+        padding: 0 30px;
+        margin-top: -30px;
+        box-shadow: 0 8px 3px -8px #c5c5c5 inset, 0 8px 3px -8px #c5c5c5 inset;
+        display: none;
+    }
+    .agenda-session-feedback-block {
+        border-left: 1px dashed #cccccc;
+        margin-left: -1px;
+    }
+    #feedback-section {
+        font-size: 15px;
+        .feedback-form {
+            padding: 15px 30px 25px 30px;
+            box-shadow: 0 8px 3px -8px #c5c5c5 inset, 0 8px 3px -8px #c5c5c5 inset;
+        }
+    }
+    #day1session1 {
+        background-color: #fff;
+        border-left: 4px solid #fff;
+        .agenda-session-time {
+            color: @pastAgendaTimeColor;
+        }
+        .agenda-session-name {
+            color: @pastAgendaSessionNameColor;
+        }
+    }
+    #day1session2 {
+        background-color: #fafafa;
+        border-left: 4px solid @currentActiveAgendaSessionNameColor;
+        .agenda-session-time {
+            color: @currentActiveAgendaTimeColor;
+        }
+        .agenda-session-name {
+            color: @currentActiveAgendaSessionNameColor;
+        }
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .agenda-parent-div {
+        font-size: 12px;
+        .session-status-img {
+            height: 22px;
+            margin-left: -12px;
+            margin-top: -13px;
+            width: 22px;
+        }
+        .session-arrow {
+            height: 20px;
+            width: 10px;
+        }
+        #feedback-section {
+            font-size: 13px;
+            .feedback-form {
+                padding-right: 5px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .agenda-parent-div {
+        font-size: 10px;
+        .session-status-img {
+            height: 20px;
+            margin-left: -10px;
+            margin-top: -11px;
+            width: 20px;
+        }
+        .profile-img {
+            width: 30px;
+            height: 30px;
+            margin-left: 5px;
+        }
+        .agenda-circle {
+            height: 30px;
+            margin-left: 8px;
+            padding-top: 7px;
+            width: 30px;
+            span {
+                color: #fff;
+                padding-left: 10px;
+            }
+        }
+        .day-agenda-header {
+            .day-agenda-header-cal-img {
+                height: 17px;
+                margin-top: -5px;
+                width: 17px;
+            }
+            .day-agenda-header-loc-img {
+                height: 17px;
+                margin-right: 5px;
+                margin-top: -5px;
+                width: 13px;
+            }
+        }
+        .session-arrow {
+            height: 16px;
+            width: 8px;
+        }
+        .feedback-link {
+            margin-left: 20px;
+            .feedback-triangle {
+                bottom: -19px;
+            }
+        }
+        #feedback-section {
+            font-size: 12px;
+        }
+    }
+}

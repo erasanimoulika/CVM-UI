@@ -1,0 +1,208 @@
+#exec-bios {
+    background-color: #eeeeee;
+    padding-top: 42px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    overflow-y: hidden;
+    height: 100%;
+    .glyphicon {
+        color: #888;
+    }
+    .list-group-item {
+        display: inline-block;
+        border: none;
+        border-bottom: 1px solid #dddddd;
+        padding: 0px;
+        border-radius: 0px;
+        width: 100%;
+        .representative-pic {
+            padding: 0px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            img {
+                width: 60px;
+            }
+        }
+        .representative-bios-div {
+            padding-left: 30px;
+            padding-top: 20px;
+        }
+        .representative-name {
+            font-family: robotoBold;
+            color: #676767;
+        }
+        .representative-designation {
+            font-family: robotoBold;
+            color: #8a8a8a;
+            font-size: 0.8em;
+            margin-bottom: 12px;
+        }
+        .representative-bios {
+            font-family: robotoRegular;
+            font-size: 0.8em;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 0px;
+            border-top: 1px solid #d0d0d0;
+            border-bottom: 1px solid #d0d0d0;
+            margin-left: 10px;
+        }
+        .reach-representative {
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: row;
+            flex-direction: row;
+            -webkit-justify-content: flex-end;
+            justify-content: flex-end;
+            padding-top: 5px;
+            .reach-representative-text {
+                align-self: center;
+                display: inline-block;
+                font-size: 0.8em;
+                margin-bottom: 12px;
+                color: #8a8a8a;
+            }
+            .tele-link {
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .phone,
+            .email {
+                color: white;
+                width: 20px;
+                height: 20px;
+                background: #888;
+                border-radius: 15px;
+                text-align: center;
+                padding-top: 5px;
+                font-size: 0.8em;
+            }
+        }
+        .chevron-div {
+            width: auto;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            padding-right: 0px;
+            padding-left: 0px;
+            float: right;
+            margin-top: 30px;
+        }
+        .chevron-down-arrow {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+        }
+        .rep-hidden-details {
+            opacity: 0;
+            transition: opacity 0.5s ease-out;
+            display: none;
+            padding-right: 0px;
+        }
+        .rep-hidden-details.active {
+            opacity: 1;
+        }
+    }
+    .list-group-item:first-child {
+        margin-top: -10px;
+    }
+    .heading {
+        color: #ef2525;
+        font-family: workSansLight;
+        font-size: 1.4em;
+        padding-bottom: 5px;
+    }
+    .csc-india-rep,
+    .client-rep {
+        margin: 10px;
+        background-color: #fff;
+        display: inline-block;
+        padding: 10px;
+        box-shadow: 2px 2px 2px #c1c1c1;
+    }
+    .client-rep {
+        margin-bottom: 0px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+    #exec-bios {
+        .list-group-item .rep-hidden-details {
+            width: 82.5%;
+        }
+    }
+}
+
+@media (min-width: 375px) and (max-width: 410px) {
+    #exec-bios {
+        .list-group-item .representative-pic {
+            width: 13.5%;
+        }
+        .list-group-item .rep-hidden-details {
+            width: 86%;
+        }
+    }
+}
+
+@media (min-width: 411px) and (max-width: 599px) {
+    #exec-bios {
+        .list-group-item .representative-pic {
+            width: 12%;
+        }
+        .list-group-item .rep-hidden-details {
+            width: 87%;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    #exec-bios {
+        .csc-india-rep {
+            display: block;
+        }
+        .list-group-item .representative-pic {
+            width: 8%;
+        }
+    }
+}
+
+@media (min-width: 960px) {
+    #exec-bios {
+        .client-rep {
+            display: block;
+        }
+        .list-group-item .representative-pic {
+            width: 5.5%;
+        }
+        .csc-india-rep,
+        .client-rep {
+            padding: 15px;
+        }
+        .list-group-item .rep-hidden-details {
+            width: 94%;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #exec-bios .list-group-item .representative-bios-div {
+        padding-left: 15px;
+    }
+    #exec-bios .list-group-item .representative-bios{
+        margin-left: 0px;
+    }
+}

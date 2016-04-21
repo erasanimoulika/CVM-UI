@@ -1,0 +1,78 @@
+<div id="my-visits-container" class="container-fluid div-padding" click-capture>
+    <div class="my-visit-header">
+        <div class="my-visit-sub-header col-xs-12 col-sm-12 col-md-12">
+            <div class="profile-details-div">
+                <img src="assets/profile-pic.png">
+                <div class="profile-overview">
+                    <h1>Mr Vincent Chase</h1>
+                    <p>Sr Analyst, CSC India</p>
+                    <div class="button-div">
+                        <button>NEW VISIT</button>
+                        <button ng-click="goToDashboard()">DASHBOARD</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="searchView col-xs-12 col-sm-12 col-md-12">
+            <div class="searchDiv col-xs-10 col-sm-9 col-md-10 div-padding">
+                <img src="assets/my_visit_search_icon.png">
+                <input type="text" placeholder="Search" value="" name="search" id="search">
+            </div>
+            <div class="sortBy col-xs-2 col-sm-3 col-md-2 div-padding" ng-click="showSortDropDown($event)">
+                <div class="sort-by-wrapper">
+                    <img src="assets/list-by-icon.png" alt="sort">
+                    <img src="assets/list-by-icon-down-arrow.png" class="drop-down-img">
+                </div>
+            </div>
+            <div class="sortByDropDown">
+                <ul class="list-group">
+                    <li class="sort-by-drop-down list-group-item " ng-click="sortByCategory()">All</li>
+                    <li class="sort-by-drop-down list-group-item" ng-click="sortByCategory()">Today</li>
+                    <li class="sort-by-drop-down list-group-item" ng-click="sortByCategory()">Past Month</li>
+                    <li class="sort-by-drop-down list-group-item" ng-click="sortByCategory()">This Month</li>
+                    <li class="sort-by-drop-down list-group-item" ng-click="sortByCategory()">Next Month</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="my-visit-content">
+        <div ng-repeat="items in [1,2]" class="visit-card" id="card{{$index}}">
+            <div class="col-xs-12 col-sm-12 col-md-12 div-padding">
+                <h2 class="col-xs-11 col-sm-11 col-md-11 div-padding">MOTOROLA VISIT</h2>
+                <img src="assets/vertical-ellipsis.png" class="col-xs-1 col-sm-1 col-md-1 pull-right div-padding img-vertical-align" ng-click="showActionDropDown('card',$index, $event)">
+                <div class="actionDropDown data-drop-down">
+                    <ul class="list-group">
+                        <!-- following two items will be visible to few Executives. So we need to hide/show based on the login-->
+                        <li class="list-group-item" ng-click="performAction()">Edit</li>
+                        <li class="list-group-item" ng-click="performAction()">Schedule</li>
+                        <li class="list-group-item" ng-click="performAction()">Delete</li>
+                        <!-- following two items will be visible to few Senior Executives . So we need to hide/show based on the login-->
+                        <li class="list-group-item" ng-click="navigateToPage('viewVisitAgenda')">View Agenda</li>
+                        <li class="list-group-item" ng-click="navigateToPage('clientInformation')">View Details</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="visit-title"> By
+                <span>Motorola Mobiles</span> on
+                <span>Mobility</span>
+            </p>
+            <p><span class="visit-status-confirmed">CONFIRMED</span></p>
+            <p><span class="visit-status-tentative">TENTATIVE</span></p>
+            <p class="badge-details"><img src="assets/badge-gold.png"> GOLD CATEGORY CLIENT</p>
+            <p class="visit-details"><img src="assets/calendar-myvisit.png" class="cal"> 26 Feb 2016 - 28 Feb 2016</p>
+            <p class="visit-details"><img src="assets/venue-bldg.png" class="location"> Hydrabad <span class="separator">|</span> Chennai <span class="separator">|</span> Noida</p>
+            <div class="upcoming-sessions">
+                <p class="upcoming-sessions-title">Your Upcoming Sessions</p>
+                <div ng-repeat="i in [1,2]">
+                    <h3>27 FEB 2016</h3>
+                    <p class="session-field" ng-repeat="j in [1,2]" ng-click="goToSessionDetail()">
+                        <img src="assets/presenter-icon.png" class="session-overview-icon">
+                        <span class="session-time">10.30</span>
+                        <span class="session-name">Mobility</span>
+                        <img src="assets/chevron-right.png" class="pull-right chevron">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

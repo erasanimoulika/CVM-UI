@@ -1,0 +1,110 @@
+.factsheet-main-container {
+    #industries {
+        background-color: #F4ECE9;
+    }
+    #industries .heading,
+    #rewards-recognition .heading,
+    #certifications .heading {
+        color: #555555;
+        /*font-size: 16px;*/
+        font-size: 1.57em;
+        padding: 5px;
+        margin-top: 0;
+        font-family: workSansMedium;
+        text-align: left;
+        padding-left: 20px;
+    }
+    #industries .row div {
+        text-align: center;
+        color: #7E685B;
+        font-size: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        label {
+            font-weight: 100;
+            padding-top: 10px;
+            font-family: workSansSemiBold;
+        }
+    }
+    #industries .row div img {
+        width: 50px;
+        display: block;
+        margin: 0 auto;
+    }
+    #rewards-recognition {
+        background-color: #F5EAD4;
+        .row .reward-set div {
+            height: 85px;
+            text-align: left;
+        }
+        img {
+            width: 120px;
+        }
+        .reward-set img {
+            width: 72px;
+            display: block;
+        }
+        label {
+            color: #8E6D25;
+            font-size: 12px;
+            font-family: workSansBold;
+            padding-top: 5px;
+            text-align: left;
+        }
+    }
+    .reward-badge-container {
+        text-align: center;
+    }
+    #certifications {
+        background-color: #F3E9F4;
+        .row div {
+            text-align: center;
+            img {
+                width: 100px;
+                padding: 10px;
+            }
+        }
+    }
+    .row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    .factsheet-main-container {
+        #rewards-recognition .reward-set img {
+            width: 85px;
+        }
+        #industries {
+            .row div {
+                font-size: 12px;
+                img {
+                    width: 75px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1439px) {
+    .factsheet-main-container {
+        #rewards-recognition {
+            img {
+                width: 150px;
+            }
+            .row .reward-set div {
+                height: 100px;
+            }
+            .reward-set img {
+                width: 100px;
+            }
+        }
+        #industries .row div {
+            font-size: 12px;
+            img {
+                width: 75px;
+            }
+        }
+    }
+}

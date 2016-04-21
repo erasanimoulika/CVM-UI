@@ -1,0 +1,522 @@
+.factsheet-main-container {
+    width: 100%;
+    text-align: center;
+    background-color: #f7f9fb;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    overflow-y: hidden;
+    height: 100%;
+    .header {
+        background-color: #eae9f4;
+        opacity: 0.9;
+    }
+    .factsheet-scrollable-block {
+        height: auto;
+        width: auto;
+        margin-top: 50px;
+    }
+    .factsheet-menu-block {
+        width: 100%;
+        background-color: #fff;
+        position: fixed;
+        height: 100%;
+        z-index: 20;
+        opacity: 0.9;
+        bottom: 0;
+    }
+    .factsheet-menu-content {
+        position: absolute;
+        bottom: 120px;
+        right: 50px;
+    }
+    .factsheet-top-block {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        background-color: #eae9f4;
+    }
+    .img-factsheet {
+        .sprite(@csclogo-hexagon-size-160px);
+        margin-left: 5px;
+        margin-right: 5px;
+        display: inline-block;
+    }
+    .factsheet-csc-logo {
+        margin-left: 170px;
+    }
+    .img-block {
+        display: inline-block;
+    }
+    .bottom-row {
+        padding-bottom: 30px;
+    }
+    .started-block,
+    .professionals-block,
+    .clients-block,
+    .top10-block,
+    .largest-block {
+        display: inline-block;
+        position: relative;
+        color: #fff;
+    }
+    .middle-row {
+        margin-bottom: -35px;
+        margin-top: -30px;
+        vertical-align: middle;
+        display: inline-flex;
+    }
+    .started-text-1 {
+        position: absolute;
+        top: 60px;
+        font-size: 1.43em;
+        font-family: workSansBold;
+        width: 100%;
+        left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .started-text-2 {
+        position: absolute;
+        top: 80px;
+        font-size: 2.5em;
+        font-family: antonioBold;
+        width: 100%;
+        left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .professionals-text-1 {
+        position: absolute;
+        top: 60px;
+        font-size: 2.5em;
+        font-family: antonioBold;
+        width: 100%;
+        left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .professionals-text-2 {
+        position: absolute;
+        top: 100px;
+        font-size: 1.28em;
+        font-family: workSansBold;
+        width: 100%;
+        left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .clients-block-text-1 {
+        position: absolute;
+        top: 60px;
+        font-size: 2.5em;
+        font-family: antonioBold;
+        width: 100%;
+        left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .clients-block-text-2 {
+        position: absolute;
+        top: 100px;
+        font-size: 1.28em;
+        font-family: workSansBold;
+        width: 100%;
+        left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .top10-text-1 {
+        position: absolute;
+        top: 60px;
+        font-size: 1.7em;
+        font-family: antonioBold;
+        width: 100%;
+        left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .top10-text-2 {
+        position: absolute;
+        top: 100px;
+        font-size: 1em;
+        font-family: workSansBold;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+        left: 0;
+    }
+    .largest-text-1 {
+        position: absolute;
+        top: 60px;
+        font-size: 1.7em;
+        font-family: antonioBold;
+        width: 100%;
+        left: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .largest-text-2 {
+        position: absolute;
+        top: 100px;
+        font-size: 1em;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-family: workSansBold;
+        width: 100%;
+        left: 0;
+    }
+    .india-map-block {
+        display: inline-block;
+        position: relative;
+        font-family: robotoBold;
+        color: #fff;
+        font-size: 1em;
+        text-shadow: 1px 1px #555555;
+        margin-bottom: 30px;
+    }
+    .map-title {
+        width: 100%;
+        text-align: left;
+        padding: 30px 20px;
+        font-size: 1.57em;
+        font-family: workSansMedium;
+        color: #555555;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .india-map {
+        width: 550px;
+        height: 600px;
+    }
+    .loc1 {
+        left: 170px;
+        position: absolute;
+        top: 155px;
+    }
+    .loc2 {
+        left: 140px;
+        position: absolute;
+        top: 290px;
+    }
+    .loc3 {
+        left: 85px;
+        position: absolute;
+        top: 300px;
+    }
+    .loc4 {
+        left: 85px;
+        position: absolute;
+        top: 360px;
+    }
+    .loc5 {
+        left: 176px;
+        position: absolute;
+        top: 414px;
+    }
+    .loc6 {
+        bottom: 64px;
+        left: 170px;
+        position: absolute;
+    }
+    .loc7 {
+        bottom: 69px;
+        left: 212px;
+        position: absolute;
+    }
+    .marker {
+        .sprite(@red-marker-15px);
+    }
+    .marker-text-1 {
+        bottom: -15px;
+        left: -5px;
+        position: absolute;
+    }
+    .marker-text-2,
+    .marker-text-4,
+    .marker-text-5 {
+        bottom: -2px;
+        position: absolute;
+        left: 17px;
+    }
+    .marker-text-3 {
+        bottom: -15px;
+        left: 1px;
+        position: absolute;
+    }
+    .marker-text-6 {
+        bottom: -15px;
+        position: absolute;
+        right: 10px;
+    }
+    .marker-text-7 {
+        bottom: -15px;
+        left: -5px;
+        position: absolute;
+    }
+    .menu-btn {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        right: 30px;
+        bottom: 40px;
+        z-index: 50;
+    }
+    .factsheet-menu-item {
+        width: 100%;
+        text-align: right;
+        font-size: 0.9em;
+        font-family: workSansMedium;
+        color: #555555;
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .factsheet-menu-item label {
+        border-radius: 3px;
+        box-shadow: 0 2px 3px #888888;
+        padding: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .factsheet-menu1 label {
+        background: #F3E9F4;
+        border-right: 4px solid #A295A6;
+    }
+    .factsheet-menu2 label {
+        background: #F5EAD4;
+        border-right: 4px solid #AB9D82;
+    }
+    .factsheet-menu3 label {
+        background: #F4ECE9;
+        border-right: 4px solid #B1A096;
+    }
+    .factsheet-menu4 label {
+        background: #E6F5EE;
+        border-right: 4px solid #56A07D;
+    }
+    .factsheet-menu5 label {
+        background: #EBF1E5;
+        border-right: 4px solid #839074;
+    }
+    .factsheet-menu6 label {
+        background: #EEF3F7;
+        border-right: 4px solid #758FA0;
+    }
+    .factsheet-menu7 label {
+        background: #EBE9F4;
+        border-right: 4px solid #9A97B2;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .factsheet-main-container {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .factsheet-main-container {
+        font-size: 11px;
+        .img-factsheet {
+            .sprite(@csclogo-hexagon-size-133px);
+            display: inline-block;
+        }
+        .factsheet-csc-logo {
+            margin-left: 150px;
+        }
+        .middle-row {
+            margin-top: -22px;
+            margin-bottom: -27px;
+        }
+        .started-text-1 {
+            top: 50px;
+        }
+        .started-text-2 {
+            top: 70px;
+        }
+        .professionals-text-1 {
+            top: 40px;
+        }
+        .professionals-text-2 {
+            top: 90px;
+        }
+        .clients-block-text-1 {
+            top: 40px;
+        }
+        .clients-block-text-2 {
+            top: 85px;
+        }
+        .top10-text-1 {
+            top: 45px;
+        }
+        .top10-text-2 {
+            padding-left: 12px;
+            padding-right: 12px;
+            top: 80px;
+        }
+        .largest-text-1 {
+            top: 45px;
+        }
+        .largest-text-2 {
+            top: 80px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        .india-map-block {
+            font-size: 1em;
+        }
+        .india-map {
+            width: 385px;
+            height: 420px;
+        }
+        .marker {
+            width: 15px;
+            height: 24px;
+        }
+        .loc1 {
+            left: 120px;
+            top: 105px;
+        }
+        .loc2 {
+            left: 95px;
+            top: 200px;
+        }
+        .loc3 {
+            left: 59px;
+            top: 205px;
+        }
+        .loc4 {
+            left: 56px;
+            top: 245px;
+        }
+        .loc5 {
+            left: 127px;
+            top: 287px;
+        }
+        .loc6 {
+            bottom: 44px;
+            left: 118px;
+        }
+        .loc7 {
+            bottom: 47px;
+            left: 148px;
+        }
+        .menuBtn {
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .factsheet-main-container {
+        font-size: 8px;
+        .img-factsheet {
+            .sprite(@csclogo-hexagon-size-95px);
+            margin-left: 3px;
+            margin-right: 3px;
+            display: inline-block;
+        }
+        .factsheet-csc-logo {
+            margin-left: 100px;
+        }
+        .middle-row {
+            margin-top: -15px;
+            margin-bottom: -20px;
+        }
+        .started-text-1 {
+            top: 30px;
+        }
+        .started-text-2 {
+            top: 45px;
+        }
+        .professionals-text-1 {
+            top: 30px;
+        }
+        .professionals-text-2 {
+            top: 55px;
+        }
+        .clients-block-text-1 {
+            top: 35px;
+        }
+        .clients-block-text-2 {
+            top: 60px;
+        }
+        .top10-text-1 {
+            top: 30px;
+        }
+        .top10-text-2 {
+            padding-left: 5px;
+            padding-right: 5px;
+            top: 55px;
+        }
+        .largest-text-1 {
+            top: 30px;
+        }
+        .largest-text-2 {
+            padding-left: 15px;
+            padding-right: 15px;
+            top: 55px;
+        }
+        .india-map-block {
+            font-size: 1em;
+        }
+        .india-map {
+            width: 275px;
+            height: 300px;
+        }
+        .loc1 {
+            left: 85px;
+            top: 75px;
+        }
+        .loc2 {
+            left: 65px;
+            top: 135px;
+        }
+        .loc3 {
+            left: 40px;
+            top: 138px;
+        }
+        .loc4 {
+            left: 38px;
+            top: 173px;
+        }
+        .loc5 {
+            left: 90px;
+            top: 200px;
+        }
+        .loc6 {
+            bottom: 33px;
+            left: 84px;
+        }
+        .loc7 {
+            bottom: 35px;
+            left: 101px;
+        }
+        .menu-btn {
+            width: 40px;
+            height: 40px;
+        }
+        .factsheet-menu-content {
+            bottom: 80px;
+        }
+    }
+}
+
+@media only screen and (max-height: 420px) {
+    .factsheet-main-container {
+        .menu-btn {
+            width: 40px;
+            height: 40px;
+            bottom: 20px;
+        }
+        .factsheet-menu-content {
+            bottom: 60px;
+        }
+    }
+}

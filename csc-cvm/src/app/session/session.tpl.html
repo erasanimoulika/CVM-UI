@@ -1,0 +1,69 @@
+<div id="session-details-page" ng-repeat="session in session_details">
+    <div class="header">
+        <span class="back-icon" ng-click="goBack()"></span>
+        <div class="time-session-name-div">
+            {{session.time}}<span class="session-name">{{session.name | uppercase}}</span>
+        </div>
+        <div class="venue-feedback-div">
+                <div class="glyphicon glyphicon-map-marker"></div>{{session.venue}}
+            <span class="feedback-button" ng-click="feedback_form()">Feedback
+                <div class="glyphicon glyphicon-triangle-bottom"></div>
+                <img src="assets/top-border-arrow.png" class="feedback-triangle">
+            </span>
+            
+        </div>
+        <feedback class="session-feedback-form"></feedback>
+    </div>
+    <div class="session-contents scrollable-content">
+        <div class="session-description-div">
+            <div class="session-heading">
+                {{session.name | uppercase}}
+            </div>
+            <div class="session-image">
+                <img ng-src="{{session.picture}}">
+            </div>
+            <div class="session-description">{{session.description}}
+            </div>
+            <div class="share">
+                <div class="share-icon-img"></div>
+                <div>Share</div>
+            </div>
+        </div>
+        <div class="session-presenter">
+            <div class="heading">PRESENTER</div>
+            <div class="presenter-details" ng-repeat="presenter in session.presenter">
+                <div class="presenter-pic col-xs-2 col-sm-1 col-md-1">
+                    <img ng-src="{{presenter.picture}}">
+                </div>
+                <div class="presenter-bios-div col-xs-10 col-sm-11 col-md-11">
+                    <div class="presenter-name">{{presenter.name}}</div>
+                    <div class="presenter-designation">{{presenter.designation}}</div>
+                    <div class="presenter-bios">{{presenter.bio}}</div>
+                    <div class="reach-presenter">
+                        <div class="reach-presenter-text">Reach him by</div>
+                        <a ng-href="tel: {{presenter.telephone}}" class="tele-link">
+                            <div class="glyphicon glyphicon-earphone phone"></div>
+                        </a>
+                        <a ng-href="mailto: {{presenter.email}}">
+                            <div class="glyphicon glyphicon-envelope email"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="session-participants">
+            <div class="heading">PARTICIPANTS</div>
+            <div class="list-group">
+                <a href="#/execBios" class="list-group-item" ng-repeat="participant in session.participants">
+                    <div class="participant-pic col-xs-2 col-sm-1 col-md-1">
+                        <img ng-src="{{participant.picture}}">
+                    </div>
+                    <div class="participant-bios-div col-xs-10 col-sm-11 col-md-11">
+                        <div class="participant-name">{{participant.name}}</div>
+                        <div class="participant-designation">{{participant.designation}}</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

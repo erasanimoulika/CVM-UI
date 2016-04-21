@@ -1,0 +1,79 @@
+html,
+body,
+#page-view,
+.view-main-div {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/*::-webkit-scrollbar {
+    width: 4px;
+}*/
+
+/*::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+    border-left: 1px solid #ccc;
+}*/
+
+/*::-webkit-scrollbar-thumb {
+    background-color: #888;
+}*/
+
+/*::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa;
+}*/
+
+a,
+a:focus,
+a:hover {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.div-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.header {
+    padding: 10px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    font-size: 1.1em;
+    box-shadow: 2px 2px 5px #676767;
+    font-family: robotoRegular;
+    flex: 0 1 auto;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+}
+
+.back-icon {
+    float: left;
+    margin: 0;
+    margin-right: 10px;
+    .sprite(@backarrow-25px);
+}
+
+.scrollable-content {
+    overflow-y: auto;
+    flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 599px) {
+    .back-icon {
+        .sprite(@backarrow-40px);
+    }
+}

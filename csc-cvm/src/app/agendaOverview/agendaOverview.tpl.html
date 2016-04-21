@@ -1,0 +1,55 @@
+<div class="agenda-parent-div">
+  <div class="agenda-header-div">
+    <h1>Agenda</h1>
+    <nav>
+      <div class="container-fluid">
+        <ul class="agenda-list">
+          <li ng-click="gotoAnchor(item.day)" ng-repeat="item in days" >           
+            <a href="" id="agendaMenu{{item.day}}">DAY {{item.day}}</a>  
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div id="agenda-scrollable-block" class="col-xs-12 col-sm-12 col-md-12 div-padding">
+    <div id="day{{item.day}}" class="container-fluid div-padding"  ng-repeat="item in days track by $index">      
+      <p class="day-agenda-header">
+        <img src="assets/top-cal.png" class="day-agenda-header-cal-img">
+        <span>{{item.day}} Dec 2015</span>
+        <img src="assets/location-icon.png" class="day-agenda-header-loc-img">
+        <span>Noida</span>
+      </p> 
+
+      <div id="day{{item.day}}session{{y}}" class="agenda-session-block" ng-repeat="y in item.session track by $index">
+        <div class="agenda-block-sub-div">
+          <p class="agenda-session-title"  ng-click="goToSessionDetail()">
+            <img src="assets/future-event.png" class="session-status-img">
+            <span class="agenda-session-time">9:30 </span>
+            <span class="agenda-session-name">BREAKFAST</span>
+            <img src="assets/future-event-arrow.png" class="pull-right session-arrow">           
+          </p>
+          <div class="agenda-session-overview">
+            <p class="agenda-session-loc">
+              <img src="assets/hourglass.png" class="agenda-time-img"> 45 min <img src="assets/venue-bldg.png" class="agenda-loc-img"> Boardroom 2, 4th floor, EGL 
+            </p>
+            <p class="agenda-attendees">
+              <span class="agenda-session-loc">with</span> 
+              <img src="assets/profile-pic.png" class="profile-img">  
+              <img src="assets/profile-pic.png" class="profile-img">             
+              <div class="agenda-circle"><span>+1</span></div>
+              <!-- <img src="assets/profile-pic.png" class="profile-img"> -->              
+              <span class="feedback-link" ng-click="rotateFeedbackArrow($event)">
+              Feedback
+                <div class="glyphicon glyphicon-triangle-bottom"></div>            
+                <img src="assets/top-border-arrow.png" class="feedback-triangle">
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="agenda-session-feedback-div">
+          <feedback class="agenda-session-feedback-block"></feedback>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,107 @@
+<div id="CVM-Home">
+    <div id="profile-details">
+        <div class="notifications">
+            <a href="#">
+                <div class="notifications-icon"></div>
+            </a></div>
+        <div class="profile-pic">
+            <img src="assets/profile-pic.png">
+        </div>
+        <div class="profile-name">Mr. John Doe Levinson</div>
+        <div class="profile-desc">Sr Analyst, EMC Inc, IL, USA</div>
+        <div class="profile-location">
+            <div class="profile-location-img glyphicon glyphicon-map-marker"></div>
+            You are at <span class="profile-location-text">CSC India, Bangalore</span></div>
+        <div class="session-overview" ng-hide="!visitStartSuccess">
+            <div class="row">
+                <div class="col-xs-4 col-sm-4 col-md-4 currentSession">
+                    <div class="on-time">ON TIME</div>
+                    <div class="second-span">Cloud Computing</div>
+                    <div class="third-span">11:00 AM to 12:15 PM</div>
+                </div>
+                <div class="clock-container col-xs-4 col-sm-4 col-md-4">
+                    <clock-svg degree="progressDegree"></clock-svg>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 next-session">
+                    <div class="next">NEXT</div>
+                    <div class="second-span">Big Data</div>
+                    <div class="third-span">12:30 PM to 1:15 PM</div>
+                </div>
+            </div>
+            <div class="agenda"><a href="#/agendaOverview">VIEW AGENDA</a></div>
+        </div>
+        <div class="session-overview clocks-display" ng-hide="visitStartSuccess">
+            <div class="row">
+                <div class="clock-container col-xs-4 col-sm-4 col-md-4">
+                    <a href="#/agendaOverview">
+                        <label class="day">DAY 1</label>
+                        <clock-svg degree="progressDegree"></clock-svg>
+                        <label class="loc">BANGALORE</label>
+                    </a>
+                </div>
+                <div class="clock-container col-xs-4 col-sm-4 col-md-4">
+                    <a href="#/agendaOverview">
+                        <label class="day">DAY 2</label>
+                        <clock-svg degree="progressDegree"></clock-svg>
+                        <label class="loc">HYDERABAD</label>
+                    </a>
+                </div>
+                <div class="clock-container col-xs-4 col-sm-4 col-md-4">
+                    <a href="#/agendaOverview">
+                        <label class="day">DAY 3</label>
+                        <clock-svg degree="progressDegree"></clock-svg>
+                        <label class="loc">NOIDA</label>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="menu">
+        <div class="row">
+            <div class="col-xs-6 col-sm-4 col-md-4">
+                <a href="#/cscFactsheet">
+                    <div class="menu-circle-icon factsheets"><div class="factsheets-img"></div></div>
+                    <div class="factsheets-text">FACTSHEETS</div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-4">
+                <a href="#/spoc">
+                    <div class="menu-circle-icon spoc"><div class="spoc-img"></div></div>
+                    <div class="spoc-text">CONTACT SPOC</div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-4">
+                <a href="#/overallFeedback">
+                    <div class="menu-circle-icon feedback">
+                        <div class="feedback-img"></div>
+                    </div>
+                    <div class="feedback-text">FEEDBACK</div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-4">
+                <a href="#/execBios">
+                    <div class="menu-circle-icon exec-bio">
+                        <div class="exec-bio-img"></div>
+                    </div>
+                    <div class="exec-bio-text">EXECUTIVE BIO'S</div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-4">
+                <a href="#/myVisits">
+                    <div class="menu-circle-icon past-visits">
+                        <div class="past-visits-img"></div>
+                    </div>
+                    <div class="past-visits-text">PAST VISITS</div>
+                </a>
+            </div>
+            <div class="col-xs-6 col-sm-4 col-md-4">
+                <a href="#">
+                    <div class="menu-circle-icon account-info">
+                        <div class="account-info-img"></div>
+                    </div>
+                    <div class="account-info-text">ACCOUNT INFO</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

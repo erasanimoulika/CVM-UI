@@ -1,0 +1,20 @@
+<div id="login-cred">
+    <div class="col-xs-12 col-sm-12 col-md-12 login-close-div">
+        <div class="close-menu">
+            <div class="login-close-but close-menu-img" ng-click="closeLoginDialog()"></div>
+        </div>
+    </div>
+    <div class="login-form">
+        <div class="username">
+            <div class=""></div>
+            <label class="float-username" for="username-input">Username</label>
+            <input type="text" id="username-input" ng-focus="float_label($event)" ng-blur="unfloat_label($event)">
+        </div>
+        <div class="password">
+            <div class=""></div>
+            <label class="float-password" for="password-input">Password</label>
+            <input type="text" id="password-input" ng-focus="float_label($event)" ng-blur="unfloat_label($event)">
+        </div>
+        <button class="login-button" ng-click="login()">LOGIN</button>
+    </div>
+</div>

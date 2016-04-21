@@ -1,0 +1,18 @@
+<div id="login-carousel" class="carousel slide" data-ride="carousel">
+    <carousel>
+        <slide ng-repeat="slide in slides">
+            <div ng-style="{'background-image':'url({{slide.image}})'}" ng-swipe-right="showPrev()" ng-swipe-left="showNext()"
+                 class="carousel-img"></div>
+
+            <div class="login-carousel-text">
+                <div class="text1">{{slide.text1 | uppercase}}</div>
+                <div class="text2">{{slide.text2 | uppercase}}</div>
+                <div class="text3">{{slide.text3}}</div>
+            </div>
+        </slide>
+    </carousel>
+    <div class="login-text" ng-click="openLogin()">
+        Login<div class="login-arrow-div"></div>
+    </div>
+
+</div>

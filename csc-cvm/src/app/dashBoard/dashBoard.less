@@ -1,0 +1,111 @@
+#dashboard-page {
+    background-color: #eee;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column;
+    flex-flow: column;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    overflow-y: hidden;
+    height: 100%;
+    .header {
+        padding-left: 50px;
+    }
+    .scrollable-content {
+        margin: 5px;
+        margin-top: 45px;
+        .tiles {
+            display: inline-block;
+            height: 100px;
+            margin: 1px;
+            color: #fff;
+            font-family: robotoRegular;
+            padding: 15px;
+            padding-top: 5px;
+            float: left;
+            position: relative;
+            .tile-image img {
+                height: 50px;
+                width: 50px;
+                margin-top: 10px;
+            }
+            .display-block {
+                display: block;
+                text-align: center;
+            }
+            .display-none {
+                display: none;
+            }
+        }
+        .tile-small {
+            .tile-name {
+                position: absolute;
+                bottom: 5px;
+            }
+        }
+        .tile-big {
+            .tile-name {
+                position: absolute;
+                bottom: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 599px) {
+    #dashboard-page {
+        font-size: 12px;
+    }
+    #dashboard-page .scrollable-content .tile-big {
+        width: 66%;
+    }
+    #dashboard-page .scrollable-content .tile-small {
+        width: 32.7%;
+    }
+}
+
+@media (min-width: 600px) {
+    #dashboard-page .scrollable-content .tile-big {
+        width: 64.7%;
+    }
+    #dashboard-page {
+        font-size: 22px;
+    }
+    #dashboard-page .scrollable-content {
+        margin: 12px;
+        margin-top: 65px;
+    }
+    #dashboard-page .scrollable-content .tiles {
+        height: 190px;
+        margin: 4px;
+    }
+    #dashboard-page .scrollable-content .tiles .tile-image img {
+        width: 100px;
+        height: 100px;
+    }
+    #dashboard-page .scrollable-content .tile-small {
+        width: 31.8%;
+    }
+}
+
+@media (min-width: 1024px) {
+    #dashboard-page .scrollable-content .tile-big {
+        width: 65.7%;
+    }
+    #dashboard-page .scrollable-content .tile-small {
+        width: 32.5%;
+    }
+    #dashboard-page .scrollable-content .tiles .tile-image img {
+        width: 125px;
+        height: 125px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #dashboard-page .scrollable-content .tile-big {
+        width: 38.5%;
+    }
+    #dashboard-page .scrollable-content .tile-small {
+        width: 18.95%;
+    }
+}
